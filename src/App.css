@@ -1,0 +1,265 @@
+/* Set the background color of the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+}
+
+/* Center the container vertically and horizontally */
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Styling the form */
+.form {
+  background-color: #1c1c1c;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Input field styles */
+.inp {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.inp::placeholder {
+  color: #aaa;
+}
+
+/* Button styling */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Link to login page */
+p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.Success {
+  color: green;
+  font-weight: bold;
+}
+
+.Error {
+  color: red;
+  font-weight: bold;
+}
+
+.invisible-msg {
+  display: none;
+}
+
+/* Add this to your CSS for login page */
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+.invisible-msg {
+  display: none;
+}
+
+/* Styling for track page container */
+.track-container {
+  background-color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Search input box styling */
+.search {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.search-inp {
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Search input focus styling */
+.search-inp:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .search-inp {
+    width: 90%;
+  }
+}
+
+
+.search-results {
+  width: 100%;
+  padding: 10px;
+  background-color: grey;
+  margin: 10px;
+  margin-bottom: 30px;
+  position: absolute;
+}
+
+/* Main card layout */
+.Food {
+  background-color: lightblue;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px;
+  margin: 40px;
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  /* Smooth scaling effect */
+  padding-top: 100px;
+
+}
+
+/* Image styling */
+.foodImage img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Food name styling */
+.foodName {
+  font-size: 22px;
+  color: #333;
+  margin: 15px 0;
+}
+
+/* Nutrition info grid layout */
+.nutrition-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns layout */
+  gap: 10px;
+  /* Space between items */
+  margin-top: 15px;
+}
+
+/* Nutrition tags styling */
+.nutrition-tag {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+/* Input and Button container */
+.food-actions {
+  display: flex;
+  flex-direction: column;
+  /* Stack input and button vertically */
+  margin-top: 20px;
+  /* Space above the actions */
+}
+
+/* Quantity input styling */
+.quantity-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  /* Light gray border */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  /* Space below input */
+  outline: none;
+  /* Remove default outline */
+  transition: border-color 0.2s;
+  /* Smooth border color transition */
+}
+
+/* Input focus effect */
+.quantity-input:focus {
+  border-color: #66afe9;
+  /* Change border color on focus */
+}
+
+/* Button styling */
+.btn {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  /* White text */
+  background-color: #007bff;
+  /* Bootstrap primary color */
+  border: none;
+  /* Remove border */
+  border-radius: 4px;
+  /* Rounded corners */
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  transition: background-color 0.3s;
+  /* Smooth background color transition */
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: #0056b3;
+  /* Darker blue on hover */
+}
+
+/* Hover effect for the card */
+.Food:hover {
+  transform: translateY(-5px);
+  /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* Deeper shadow on hover */
+}
